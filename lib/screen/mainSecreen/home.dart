@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:instagram_fai/componen/feedsScreen.dart';
 import 'package:instagram_fai/componen/stories_data.dart';
 import 'package:instagram_fai/componen/storys.dart';
 
@@ -47,9 +48,7 @@ class _HomeState extends State<Home> {
               height: 10.0,
             ),
             Storys(stories: stories),
-            const Divider(
-              color: Colors.black38,
-            )
+            FeedScreen()
           ],
         ),
       ),

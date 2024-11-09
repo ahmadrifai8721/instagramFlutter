@@ -92,7 +92,7 @@ packages:
     source: sdk
     version: "0.0.0"
   http:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: http
       sha256: b9c29a161230ee03d3ccf545097fccd9b87a5264228c5d348202e0f0c28f9010
@@ -187,6 +187,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.2"
+  random_name_generator:
+    dependency: "direct main"
+    description:
+      name: random_name_generator
+      sha256: "7c5b91d60f68b30e7b4c53006047cab8474f06563f7d0cab70fb409a0cb5ff61"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.5.0"
   sky_engine:
     dependency: transitive
     description: flutter
