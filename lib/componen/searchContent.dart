@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_fai/componen/feeds_data.dart';
+import 'package:instagram_fai/componen/Home/feeds_data.dart';
 
 class Searchcontent extends StatelessWidget {
   final FeedsData post;

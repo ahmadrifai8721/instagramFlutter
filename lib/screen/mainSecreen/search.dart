@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram_fai/componen/feeds_data.dart';
+import 'package:instagram_fai/componen/Home/feeds_data.dart';
 import 'package:instagram_fai/componen/searchContent.dart';
 
 class Search extends StatefulWidget {

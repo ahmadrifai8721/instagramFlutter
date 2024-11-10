@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_fai/componen/feeds_data.dart';
-import 'package:instagram_fai/componen/post.dart';
+import 'package:instagram_fai/componen/Home/feeds_data.dart';
+import 'package:instagram_fai/componen/Home/post.dart';
 
 class Reels extends StatefulWidget {
   const Reels({super.key});

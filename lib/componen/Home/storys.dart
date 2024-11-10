@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram_fai/componen/stories_data.dart';
+import 'package:instagram_fai/componen/Home/stories_data.dart';
 
 class Storys extends StatelessWidget {
   const Storys({super.key, required this.stories});
