@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram_fai/componen/Home/feeds_data.dart';
 import 'package:instagram_fai/componen/Profile/profilePost.dart';
 import 'package:instagram_fai/componen/Profile/profileUser.dart';
-import 'package:instagram_fai/componen/searchContent.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});

@@ -69,7 +69,7 @@ class _ProfileuserState extends State<Profileuser> {
             width: MediaQuery.of(context).size.width - 147,
             child: const Align(
               alignment: Alignment.centerRight,
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Column(
