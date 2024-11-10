@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:camerawesome/camerawesome_plugin.dart';
 
 class Posting extends StatefulWidget {
   const Posting({super.key});
@@ -10,8 +11,11 @@ class Posting extends StatefulWidget {
 class _PostingState extends State<Posting> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(
-      child: Text("posting"),
+    return Scaffold(
+      body: CameraAwesomeBuilder.awesome(
+        saveConfig: SaveConfig.photoAndVideo(),
+        onMediaTap: (mediaCapture) {},
+      ),
     );
   }
 }

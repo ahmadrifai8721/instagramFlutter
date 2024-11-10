@@ -41,7 +41,7 @@ class _mainScreenState extends State<mainScreen> {
             IconButton(
                 onPressed: (() =>
                     setState(() => selectedIndex = selectMenu.posting)),
-                icon:  SvgPicture.asset('assets/icons/posting.svg')),
+                icon: SvgPicture.asset('assets/icons/posting.svg')),
             IconButton(
                 onPressed: (() =>
                     setState(() => selectedIndex = selectMenu.reels)),

@@ -1,7 +1,4 @@
-import 'dart:convert';
-
 import 'package:random_name_generator/random_name_generator.dart';
-import 'package:http/http.dart' as http;
 
 class FeedsData {
   final String username;
@@ -18,22 +15,6 @@ class FeedsData {
 }
 
 var randomNama = RandomNames(Zone.uk);
-final String quoteURL = "https://api.adviceslip.com/advice";
-String quote = 'Random Quote';
-Future<void> generateQuote() async {
-  try {
-    final response = await http.get(Uri.parse(quoteURL));
-    if (response.statusCode == 200) {
-      final result = jsonDecode(response.body);
-
-      quote = result["slip"]["advice"];
-    } else {
-      quote = 'Failed to fetch quote';
-    }
-  } catch (e) {
-    quote = 'Failed to fetch quote';
-  }
-}
 
 final List<String> captions = [
   "Life is an adventure, let's live it to the fullest",

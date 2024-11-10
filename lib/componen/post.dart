@@ -7,7 +7,7 @@ import 'package:instagram_fai/componen/feeds_data.dart';
 class Post extends StatelessWidget {
   final FeedsData post;
 
-  Post({required this.post});
+  const Post({super.key, required this.post});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class Post extends StatelessWidget {
         DecoratedBox(
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/content/' + post.postImage),
+                image: AssetImage('assets/images/content/${post.postImage}'),
                 fit: BoxFit.cover),
           ),
           child: Column(
