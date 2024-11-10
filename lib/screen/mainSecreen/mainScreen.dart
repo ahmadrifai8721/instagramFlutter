@@ -29,19 +29,25 @@ class _mainScreenState extends State<mainScreen> {
             IconButton(
                 onPressed: (() =>
                     setState(() => selectedIndex = selectMenu.home)),
-                icon: SvgPicture.asset('assets/icons/home.svg')),
+                icon: selectedIndex == selectMenu.home
+                    ? SvgPicture.asset('assets/icons/homeAct.svg')
+                    : SvgPicture.asset('assets/icons/home.svg')),
             IconButton(
                 onPressed: (() =>
                     setState(() => selectedIndex = selectMenu.search)),
-                icon: SvgPicture.asset('assets/icons/search.svg')),
+                icon: selectedIndex == selectMenu.search
+                    ? SvgPicture.asset('assets/icons/searchAct.svg')
+                    : SvgPicture.asset('assets/icons/search.svg')),
             IconButton(
                 onPressed: (() =>
                     setState(() => selectedIndex = selectMenu.posting)),
-                icon: SvgPicture.asset('assets/icons/posting.svg')),
+                icon:  SvgPicture.asset('assets/icons/posting.svg')),
             IconButton(
                 onPressed: (() =>
                     setState(() => selectedIndex = selectMenu.reels)),
-                icon: SvgPicture.asset('assets/icons/reels.svg')),
+                icon: selectedIndex == selectMenu.reels
+                    ? SvgPicture.asset('assets/icons/reelsAct.svg')
+                    : SvgPicture.asset('assets/icons/reels.svg')),
             IconButton(
                 onPressed: (() =>
                     setState(() => selectedIndex = selectMenu.profile)),

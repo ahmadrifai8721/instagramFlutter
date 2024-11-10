@@ -12,7 +12,6 @@ class Post extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     int randomInt = Random().nextInt(1000) + 1000;
-    double c_width = MediaQuery.of(context).size.width * 1;
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
