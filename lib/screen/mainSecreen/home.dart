@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
               height: 10.0,
             ),
             Storys(stories: stories),
-            FeedScreen()
+            const FeedScreen()
           ],
         ),
       ),
