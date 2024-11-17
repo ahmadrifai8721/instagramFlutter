@@ -123,7 +123,7 @@ class _ProfileState extends State<Profile> {
           final accounts = AccountsDatabase.Accounts;
           return Container(
               decoration: const BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   colors: [

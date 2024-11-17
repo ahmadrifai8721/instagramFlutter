@@ -10,7 +10,7 @@ class Slidepanel extends StatelessWidget {
     return Container(
         margin: const EdgeInsets.only(top: 4.0),
         decoration: const BoxDecoration(
-          borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+          borderRadius: BorderRadius.all(Radius.circular(10.0)),
           color: Colors.white,
         ),
         child: Column(
@@ -37,11 +37,11 @@ class Slidepanel extends StatelessWidget {
                   margin: const EdgeInsets.all(10.0),
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(1000),
-                      child: Icon(Icons.add)),
+                      child: const Icon(Icons.add)),
                 ),
-                Text(
+                const Text(
                   "Tambah Akun Instagram",
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 )
               ],
             )
