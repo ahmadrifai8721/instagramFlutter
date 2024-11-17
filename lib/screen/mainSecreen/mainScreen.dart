@@ -51,11 +51,47 @@ class _mainScreenState extends State<mainScreen> {
             IconButton(
                 onPressed: (() =>
                     setState(() => selectedIndex = selectMenu.profile)),
-                icon: const CircleAvatar(
-                  maxRadius: 15.0,
-                  backgroundImage:
-                      AssetImage('assets/images/profile/rifaiPP.JPG'),
-                )),
+                icon: selectedIndex == selectMenu.profile
+                    ? Container(
+                        width: 30,
+                        height: 30,
+                        // margin: const EdgeInsets.fromLTRB(8, 0, 8, 0),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(1000),
+                            color: Colors.black),
+                        child: Container(
+                          margin: const EdgeInsets.all(2),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(1000),
+                          ),
+                          padding: const EdgeInsets.all(2.5),
+                          child: ClipRRect(
+                              borderRadius: BorderRadius.circular(1000),
+                              child: Image.asset(
+                                  'assets/images/profile/rifaiPP.JPG')),
+                        ),
+                      )
+                    : Container(
+                        width: 30,
+                        height: 30,
+                        // margin: const EdgeInsets.fromLTRB(8, 0, 8, 0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(1000),
+                        ),
+                        child: Container(
+                          margin: const EdgeInsets.all(2),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(1000),
+                          ),
+                          padding: const EdgeInsets.all(2.5),
+                          child: ClipRRect(
+                              borderRadius: BorderRadius.circular(1000),
+                              child: Image.asset(
+                                  'assets/images/profile/rifaiPP.JPG')),
+                        ),
+                      )),
           ],
         ),
       ),

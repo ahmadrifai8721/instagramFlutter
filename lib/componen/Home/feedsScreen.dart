@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_fai/componen/feeds_data.dart';
-import 'package:instagram_fai/componen/post.dart';
+import 'package:instagram_fai/componen/Home/feeds_data.dart';
+import 'package:instagram_fai/componen/Home/post.dart';
 
 class FeedScreen extends StatelessWidget {
   const FeedScreen({super.key});
